@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Luckiest Guy';
+  box-sizing: border-box;
+  background-color: #e6e6ea;
+}
+
+.container {
+  padding: 20px;
+  overflow: hidden;
+  background-color: #fe3b58;
+}
+
+.container h1 {
+  float: left;
+  margin-left: 10%;
+  color: rgb(236, 248, 6);
+}
+
+.container ul {
+  list-style: none;
+  font-size: 1.3rem;
+  margin-left: 60%;
+}
+
+.container li {
+  margin-top: 10px;
+  float: left;
+  padding: 0 20px 0 20px;
+}
+
+.container a {
+  text-decoration: none;
+  color: white;
+}
+
+.current a::after {
+  content: '_';
+  background-color: #e6e6ea;
+  font-size: 4px;
+  display: block;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 82% 18%;
+}
+
+.equation {
+  position: relative;
+  font-size: 5rem;
+  background-image: url(pozadina.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 15%;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.equation h1 {
+  display: inline;
+  padding: 20px;
+}
+
+.answer-options {
+  font-size: 3.8rem;
+  margin-right: 10px;
+}
+
+.answer-options h1 {
+  cursor: pointer;
+  color: whitesmoke;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#options1 {
+  border-radius: 50px;
+
+  background-color: #fe3b58;
+  transition: 1s;
+}
+#options1:hover {
+  background-color: whitesmoke;
+  color: #fe3b58;
+}
+
+#options2 {
+  border-radius: 50px;
+
+  background-color: #2abc7a;
+  transition: 1s;
+}
+#options2:hover {
+  background-color: whitesmoke;
+  color: #2abc7a;
+}
+
+#options3 {
+  border-radius: 50px;
+
+  background-color: #e2b00c;
+  transition: 1s;
+}
+
+#options3:hover {
+  background-color: whitesmoke;
+  color: #e2b00c;
+}
+
+#options4 {
+  border-radius: 50px;
+
+  background-color: #0c25e2;
+  transition: 1s;
+}
+
+#options4:hover {
+  background-color: whitesmoke;
+  color: #0c25e2;
+}
+
+#timeContainer {
+  margin-top: -190px;
+  height: 12rem;
+  border-bottom: 10px solid rgba(255, 200, 0, 0.43);
+}
+
+.butt {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.timerBtn {
+  width: 7rem;
+  height: 2.5rem;
+  background-color: rgb(3, 77, 251);
+  color: white;
+  border-radius: 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: 'Rammetto One';
+  box-shadow: 2px 12px 15px 5px rgb(51, 110, 153);
+}
+
+.timerBtn:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+.restart {
+  background-color: #fe3b58;
+  color: black;
+}
+
+#startBtn {
+  width: 9rem;
+  height: 3rem;
+}
+
+.hidden {
+  display: none;
+}
+#highScoreBtn {
+  background-color: #2abc7a;
+  width: fit-content;
+  padding: 0 20px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+.scores {
+  position: absolute;
+  top: 30vh;
+  left: 300px;
+  width: 640px;
+  height: 400px;
+  border: 3px solid red;
+  background-color: #00020c;
+  border-radius: 20px;
+  overflow-y: auto;
+}
+.contentScores {
+  max-width: 400px;
+  overflow-y: auto;
+}
+
+.scores h1 {
+  text-align: center;
+  margin-left: 100px;
+  color: #f6f5f2;
+}
+
+.scores ul li {
+  list-style: none;
+  padding: 5px 20px;
+}
+
+.scores::-webkit-scrollbar {
+  height: 10px;
+  color: #0ce2a5;
+}
+.caption {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.fa-solid {
+  font-size: 30px;
+  cursor: pointer;
+  color: #f40404;
+}
+
+.transparent {
+  filter: blur(7px);
+}
+
+.highScoreList {
+  overflow-y: auto;
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#span1 {
+  margin-left: 20px;
+  color: #c9e31d;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#span2 {
+  position: absolute;
+  margin-left: 20px;
+  color: #b909bc;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  right: 20px;
+}
+#span3 {
+  position: absolute;
+  margin-left: 20px;
+  left: 40%;
+  color: #0ce2a5;
+  font-size: 14px;
+}

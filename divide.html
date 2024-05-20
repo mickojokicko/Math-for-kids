@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Playfair+Display:ital,wght@0,500;1,400&family=Tektur:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Rammetto+One&family=Tektur:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Math for kids</title>
+  </head>
+  <body>
+    <audio id="myAudio" src="Sound/wrong.mp3"></audio>
+    <audio id="myAudio1" src="Sound/correct.mp3"></audio>
+
+    <header>
+      <div class="container">
+        <h1>🍉Matematika za osnovce🍉</h1>
+        <ul>
+          <li><a href="add.html">Add</a></li>
+          <li><a href="subtract.html">Subtract</a></li>
+          <li><a href="multiply.html">Multiply</a></li>
+          <li class="current"><a href="divide.html">Divide</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="overlay">
+      <div class="wrapper">
+        <div class="equation">
+          <div id="timeContainer">
+            <div id="timeDisplay">00:00:00</div>
+            <div class="butt">
+              <button id="pauseBtn" class="timerBtn">Pause</button>
+              <button id="startBtn" class="timerBtn">Start</button>
+              <button id="restartBtn" class="timerBtn restart">Restart</button>
+              <button id="highScoreBtn" class="timerBtn">High Score</button>
+            </div>
+          </div>
+
+          <h1 id="num1" style="color: #7304c8">?</h1>
+          <h1 style="color: #023c42">/</h1>
+          <h1 id="num2" style="color: rgb(248, 5, 25)">?</h1>
+          <h1 style="color: rgb(10, 233, 29)">=</h1>
+          <h1 style="color: #d1d810">?</h1>
+        </div>
+
+        <div class="answer-options">
+          <h1 id="options1">?</h1>
+          <h1 id="options3">?</h1>
+          <h1 id="options2">?</h1>
+          <h1 id="options4">?</h1>
+        </div>
+      </div>
+      <div class="scores hidden">
+        <div class="caption">
+          <h1>High scores</h1>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul id="highScoreList"></ul>
+      </div>
+    </div>
+    <script src="Scripts/divide.js"></script>
+  </body>
+</html>
